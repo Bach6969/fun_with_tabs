@@ -1,0 +1,85 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    overflow-y: auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sidebar label {
+    display: block;
+    padding: 10px 20px;
+    color: #ccc;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+  }
+  .sidebar label:hover {
+    background-color: #555;
+    color: #fff;
+  }
+  
+  /* Main content area */
+  .content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
+  /* Hide all radio buttons */
+  input[type="radio"] {
+    display: none;
+  }
+  
+  /* Hide all bios by default */
+  .bio {
+    display: none;
+  }
+  
+  /* Display the bio corresponding to the selected radio button */
+  #character1:checked ~ .content #bio1,
+  #character2:checked ~ .content #bio2,
+  #character3:checked ~ .content #bio3,
+  #character4:checked ~ .content #bio4,
+  #character5:checked ~ .content #bio5,
+  #character6:checked ~ .content #bio6,
+  #character7:checked ~ .content #bio7,
+  #character8:checked ~ .content #bio8,
+  #character9:checked ~ .content #bio9,
+  #character10:checked ~ .content #bio10,
+  #character11:checked ~ .content #bio11,
+  #character12:checked ~ .content #bio12,
+  #character13:checked ~ .content #bio13,
+  #character14:checked ~ .content #bio14,
+  #character15:checked ~ .content #bio15,
+  #character16:checked ~ .content #bio16,
+  #character17:checked ~ .content #bio17,
+  #character18:checked ~ .content #bio18,
+  #character19:checked ~ .content #bio19,
+  #character20:checked ~ .content #bio20,
+  #character21:checked ~ .content #bio21,
+  #character22:checked ~ .content #bio22,
+  #character23:checked ~ .content #bio23,
+  #character24:checked ~ .content #bio24,
+  #character25:checked ~ .content #bio25,
+  #character26:checked ~ .content #bio26,
+  #character27:checked ~ .content #bio27,
+  #character28:checked ~ .content #bio28,
+  #character29:checked ~ .content #bio29,
+  #character30:checked ~ .content #bio30 {
+    display: block;
+  }
+  
